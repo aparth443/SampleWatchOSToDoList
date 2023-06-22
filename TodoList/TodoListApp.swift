@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct TodoListApp: App {
+    @StateObject private var watchManager = WatchManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(watchManager)
         }
     }
 }

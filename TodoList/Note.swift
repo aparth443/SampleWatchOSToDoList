@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Note: Identifiable, Codable  {
+struct Note: Identifiable, Codable, Equatable  {
     let id: String
     let text: String
 }

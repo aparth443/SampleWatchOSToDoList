@@ -10,61 +10,32 @@ import WatchConnectivity
 
 struct ContentView: View {
     
-    @StateObject private var watchManager = WatchManager()
+    @EnvironmentObject var watchManager: WatchManager
     @State private var notes: [Note] = [Note]()
     @State private var text: String = ""
     
-    
-    func getDocumentDirectory() -> URL {
-        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return path[0]
-    }
-    
-    func sendMessageToPhone(data: Data){
-        let session = WCSession.default
-        if session.isReachable{
-            let message = ["note": data]
-            session.sendMessage(message, replyHandler: nil) { error in
-                print("Error sending data to phone: \(error.localizedDescription)")
-            }
-        }
-    }
-    
-    func save(){
-        do{
-            //Convert the notes array to data using JSONEncoder
-            let data = try JSONEncoder().encode(notes)
-            //Create a new URL to save the file using the getDocumentDirectory()
-            let url = getDocumentDirectory().appendingPathComponent("notes")
-            try data.write(to: url)
-            //Write the data to the given URL
-            sendMessageToPhone(data: data)
-        }catch{
-            print("Saving data has failed!")
-        }
-    }
-    
-    func load(){
-        DispatchQueue.main.async {
-            do{
-                //Get the notes url path
-                let url = getDocumentDirectory().appendingPathComponent("notes")
-                //create a new property for the data
-                let data = try Data(contentsOf: url)
-                //decode the data
-                notes = try JSONDecoder().decode([Note].self, from: data)
-            }catch{
-                print("Loading data has failed!")
-            }
-        }
-    }
-    
-    func delete(offsets: IndexSet){
+    func delete(offsets: IndexSet) {
         withAnimation {
-            notes.remove(atOffsets: offsets)
-            save()
+            let deletedNotes = offsets.map { notes[$0] }
+            deletedNotes.forEach { deletedNote in
+                if let index = notes.firstIndex(of: deletedNote) {
+                    notes.remove(at: index)
+                }
+                watchManager.sendNoteToPhone(deletedNote)
+            }
         }
     }
+    
+    func update(_ note: Note){
+        DispatchQueue.main.async {
+            if let index = notes.firstIndex(where: { $0.id == note.id }) {
+                notes.remove(at: index)
+            } else if !note.text.isEmpty {
+                notes.append(note)
+            }
+        }
+    }
+    
     var body: some View {
         NavigationStack{
             VStack {
@@ -76,9 +47,8 @@ struct ContentView: View {
                         }
                         let note = Note(id: UUID().uuidString, text: text)
                         notes.append(note)
+                        watchManager.sendNoteToPhone(note)
                         text = ""
-                        save()
-                        
                     }label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size: 42, weight: .semibold))
@@ -118,15 +88,13 @@ struct ContentView: View {
             }
             .navigationTitle("Notes")
             .onAppear(perform: {
-                if WCSession.isSupported() {
-                    let session = WCSession.default
-                    session.delegate = watchManager
-                    session.activate()
-                }
-                load()
+                watchManager.activateWCSession()
             })
+            .onReceive(watchManager.$messageFromPhone){
+                note in
+                update(note)
+            }
         }
-        
     }
 }
 
