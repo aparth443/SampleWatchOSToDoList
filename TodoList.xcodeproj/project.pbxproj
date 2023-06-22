@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		695DA85F2A441E5300BDDE8A /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695DA85E2A441E5300BDDE8A /* TodoListApp.swift */; };
+		695DA8612A441E5300BDDE8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695DA8602A441E5300BDDE8A /* ContentView.swift */; };
+		695DA8632A441E5600BDDE8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695DA8622A441E5600BDDE8A /* Assets.xcassets */; };
+		695DA8662A441E5600BDDE8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695DA8652A441E5600BDDE8A /* Preview Assets.xcassets */; };
+		695DA86C2A441E5600BDDE8A /* TodoList Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 695DA86B2A441E5600BDDE8A /* TodoList Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		695DA8712A441E5600BDDE8A /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695DA8702A441E5600BDDE8A /* TodoListApp.swift */; };
+		695DA8732A441E5600BDDE8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695DA8722A441E5600BDDE8A /* ContentView.swift */; };
+		695DA8752A441E5800BDDE8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695DA8742A441E5800BDDE8A /* Assets.xcassets */; };
+		695DA8782A441E5800BDDE8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695DA8772A441E5800BDDE8A /* Preview Assets.xcassets */; };
+		695DA8832A441EAE00BDDE8A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695DA8822A441EAE00BDDE8A /* Note.swift */; };
+		695DA8852A441EE100BDDE8A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695DA8842A441EE100BDDE8A /* DetailView.swift */; };
+		695DA8872A4421B300BDDE8A /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695DA8862A4421B300BDDE8A /* WatchManager.swift */; };
+		695DA8892A4426A100BDDE8A /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695DA8882A4426A100BDDE8A /* WatchManager.swift */; };
+		695DA88B2A4426E300BDDE8A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695DA88A2A4426E300BDDE8A /* Note.swift */; };
+		695DA88D2A4426FE00BDDE8A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695DA88C2A4426FE00BDDE8A /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		695DA86D2A441E5600BDDE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 695DA8532A441E5300BDDE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 695DA86A2A441E5600BDDE8A;
+			remoteInfo = "TodoList Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		695DA87E2A441E5800BDDE8A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				695DA86C2A441E5600BDDE8A /* TodoList Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		695DA85B2A441E5300BDDE8A /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		695DA85E2A441E5300BDDE8A /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
+		695DA8602A441E5300BDDE8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		695DA8622A441E5600BDDE8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		695DA8652A441E5600BDDE8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		695DA86B2A441E5600BDDE8A /* TodoList Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TodoList Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		695DA8702A441E5600BDDE8A /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
+		695DA8722A441E5600BDDE8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		695DA8742A441E5800BDDE8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		695DA8772A441E5800BDDE8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		695DA8822A441EAE00BDDE8A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		695DA8842A441EE100BDDE8A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		695DA8862A4421B300BDDE8A /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
+		695DA8882A4426A100BDDE8A /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
+		695DA88A2A4426E300BDDE8A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		695DA88C2A4426FE00BDDE8A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		695DA88E2A442C6600BDDE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		695DA88F2A442EDB00BDDE8A /* TodoList Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TodoList Watch App.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		695DA8582A441E5300BDDE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		695DA8682A441E5600BDDE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		695DA8522A441E5300BDDE8A = {
+			isa = PBXGroup;
+			children = (
+				695DA85D2A441E5300BDDE8A /* TodoList */,
+				695DA86F2A441E5600BDDE8A /* TodoList Watch App */,
+				695DA85C2A441E5300BDDE8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		695DA85C2A441E5300BDDE8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				695DA85B2A441E5300BDDE8A /* TodoList.app */,
+				695DA86B2A441E5600BDDE8A /* TodoList Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		695DA85D2A441E5300BDDE8A /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				695DA88E2A442C6600BDDE8A /* Info.plist */,
+				695DA85E2A441E5300BDDE8A /* TodoListApp.swift */,
+				695DA8602A441E5300BDDE8A /* ContentView.swift */,
+				695DA8882A4426A100BDDE8A /* WatchManager.swift */,
+				695DA88A2A4426E300BDDE8A /* Note.swift */,
+				695DA88C2A4426FE00BDDE8A /* DetailView.swift */,
+				695DA8622A441E5600BDDE8A /* Assets.xcassets */,
+				695DA8642A441E5600BDDE8A /* Preview Content */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		695DA8642A441E5600BDDE8A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				695DA8652A441E5600BDDE8A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		695DA86F2A441E5600BDDE8A /* TodoList Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				695DA88F2A442EDB00BDDE8A /* TodoList Watch App.entitlements */,
+				695DA8702A441E5600BDDE8A /* TodoListApp.swift */,
+				695DA8722A441E5600BDDE8A /* ContentView.swift */,
+				695DA8842A441EE100BDDE8A /* DetailView.swift */,
+				695DA8822A441EAE00BDDE8A /* Note.swift */,
+				695DA8862A4421B300BDDE8A /* WatchManager.swift */,
+				695DA8742A441E5800BDDE8A /* Assets.xcassets */,
+				695DA8762A441E5800BDDE8A /* Preview Content */,
+			);
+			path = "TodoList Watch App";
+			sourceTree = "<group>";
+		};
+		695DA8762A441E5800BDDE8A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				695DA8772A441E5800BDDE8A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		695DA85A2A441E5300BDDE8A /* TodoList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 695DA87F2A441E5800BDDE8A /* Build configuration list for PBXNativeTarget "TodoList" */;
+			buildPhases = (
+				695DA8572A441E5300BDDE8A /* Sources */,
+				695DA8582A441E5300BDDE8A /* Frameworks */,
+				695DA8592A441E5300BDDE8A /* Resources */,
+				695DA87E2A441E5800BDDE8A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				695DA86E2A441E5600BDDE8A /* PBXTargetDependency */,
+			);
+			name = TodoList;
+			productName = TodoList;
+			productReference = 695DA85B2A441E5300BDDE8A /* TodoList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		695DA86A2A441E5600BDDE8A /* TodoList Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 695DA87B2A441E5800BDDE8A /* Build configuration list for PBXNativeTarget "TodoList Watch App" */;
+			buildPhases = (
+				695DA8672A441E5600BDDE8A /* Sources */,
+				695DA8682A441E5600BDDE8A /* Frameworks */,
+				695DA8692A441E5600BDDE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TodoList Watch App";
+			productName = "TodoList Watch App";
+			productReference = 695DA86B2A441E5600BDDE8A /* TodoList Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		695DA8532A441E5300BDDE8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					695DA85A2A441E5300BDDE8A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					695DA86A2A441E5600BDDE8A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 695DA8562A441E5300BDDE8A /* Build configuration list for PBXProject "TodoList" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 695DA8522A441E5300BDDE8A;
+			productRefGroup = 695DA85C2A441E5300BDDE8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				695DA85A2A441E5300BDDE8A /* TodoList */,
+				695DA86A2A441E5600BDDE8A /* TodoList Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		695DA8592A441E5300BDDE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695DA8662A441E5600BDDE8A /* Preview Assets.xcassets in Resources */,
+				695DA8632A441E5600BDDE8A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		695DA8692A441E5600BDDE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695DA8782A441E5800BDDE8A /* Preview Assets.xcassets in Resources */,
+				695DA8752A441E5800BDDE8A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		695DA8572A441E5300BDDE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695DA8612A441E5300BDDE8A /* ContentView.swift in Sources */,
+				695DA85F2A441E5300BDDE8A /* TodoListApp.swift in Sources */,
+				695DA8892A4426A100BDDE8A /* WatchManager.swift in Sources */,
+				695DA88D2A4426FE00BDDE8A /* DetailView.swift in Sources */,
+				695DA88B2A4426E300BDDE8A /* Note.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		695DA8672A441E5600BDDE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695DA8732A441E5600BDDE8A /* ContentView.swift in Sources */,
+				695DA8852A441EE100BDDE8A /* DetailView.swift in Sources */,
+				695DA8872A4421B300BDDE8A /* WatchManager.swift in Sources */,
+				695DA8712A441E5600BDDE8A /* TodoListApp.swift in Sources */,
+				695DA8832A441EAE00BDDE8A /* Note.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		695DA86E2A441E5600BDDE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 695DA86A2A441E5600BDDE8A /* TodoList Watch App */;
+			targetProxy = 695DA86D2A441E5600BDDE8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		695DA8792A441E5800BDDE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		695DA87A2A441E5800BDDE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		695DA87C2A441E5800BDDE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TodoList Watch App/TodoList Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TodoList Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = G56QYJ7ZRJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TodoList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.parthagrawal.TodoList;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parthagrawal.TodoList.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		695DA87D2A441E5800BDDE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TodoList Watch App/TodoList Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TodoList Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = G56QYJ7ZRJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TodoList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.parthagrawal.TodoList;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parthagrawal.TodoList.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		695DA8802A441E5800BDDE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TodoList/Preview Content\"";
+				DEVELOPMENT_TEAM = G56QYJ7ZRJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodoList/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TodoList;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parthagrawal.TodoList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		695DA8812A441E5800BDDE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TodoList/Preview Content\"";
+				DEVELOPMENT_TEAM = G56QYJ7ZRJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodoList/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TodoList;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parthagrawal.TodoList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		695DA8562A441E5300BDDE8A /* Build configuration list for PBXProject "TodoList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				695DA8792A441E5800BDDE8A /* Debug */,
+				695DA87A2A441E5800BDDE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		695DA87B2A441E5800BDDE8A /* Build configuration list for PBXNativeTarget "TodoList Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				695DA87C2A441E5800BDDE8A /* Debug */,
+				695DA87D2A441E5800BDDE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		695DA87F2A441E5800BDDE8A /* Build configuration list for PBXNativeTarget "TodoList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				695DA8802A441E5800BDDE8A /* Debug */,
+				695DA8812A441E5800BDDE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 695DA8532A441E5300BDDE8A /* Project object */;
+}
